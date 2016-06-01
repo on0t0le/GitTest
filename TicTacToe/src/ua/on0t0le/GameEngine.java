@@ -73,7 +73,7 @@ public class GameEngine implements ActionListener {
 		   (parent.b1.getText()==parent.b4.getText()&parent.b4.getText()==parent.b7.getText()&parent.b1.getText()!="")||
 		   (parent.b2.getText()==parent.b5.getText()&parent.b5.getText()==parent.b8.getText()&parent.b2.getText()!="")||
 		   (parent.b3.getText()==parent.b6.getText()&parent.b6.getText()==parent.b9.getText()&parent.b3.getText()!="")){
-			JOptionPane.showMessageDialog(null, "Player "+player+" wins!");
+			JOptionPane.showMessageDialog(null, "Player "+player+" wins the game!");
 			parent.dispose();
 		}
 		
