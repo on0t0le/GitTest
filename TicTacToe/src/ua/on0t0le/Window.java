@@ -51,6 +51,7 @@ public class Window extends JFrame {
 		setSize(300,300);
 		setVisible(true);
 		setContentPane(p1);
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
