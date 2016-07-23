@@ -19,15 +19,17 @@ namespace Test1
             field.Draw();
             
             //create Snake
-            Point p = new Point(4, 5, '*');
+            //Point pr = new Point(4, 6, '%');
+            //pr.Draw();
+            Point p = new Point(4, 5, '*');            
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
-
+            
             //create food
-            Kitchen k = new Kitchen(80, 25, 'o');
+            Kitchen k = new Kitchen(80, 25, '$');
             Point food = k.Cooking();
             food.Draw();
-
+            
             int s = 150;
 
             //snake move
@@ -44,8 +46,8 @@ namespace Test1
                 if (snake.Eat(food))
                 {
                     food = k.Cooking();
-                    food.Draw();
-                    s = s - 10;
+                    //food.Draw();
+                   // s = s - 10;
                 }
 
 
@@ -54,7 +56,7 @@ namespace Test1
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.Handle(key.Key);
                 }
-
+                food.Draw();
                 Thread.Sleep(s);
                 snake.Move();
             }
@@ -63,7 +65,9 @@ namespace Test1
             Console.SetCursorPosition(35, 10);
             
             Console.WriteLine("Game over");
+            
             Console.ReadKey();
+            
         }
     }
 }

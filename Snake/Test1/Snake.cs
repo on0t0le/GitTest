@@ -74,6 +74,7 @@ namespace Test1
             Point head = getNext();
             if (head.isHit(food))
             {
+                head.Draw();
                 food.symb = head.symb;
                 pList.Add(food);
                 return true;

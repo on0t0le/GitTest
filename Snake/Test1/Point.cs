@@ -14,9 +14,9 @@ namespace Test1
 
         public Point(int xz, int yz, char chz)
         {
-            x = xz;
-            y = yz;
-            symb = chz;
+            this.x = xz;
+            this.y = yz;
+            this.symb = chz;
 
         }
         

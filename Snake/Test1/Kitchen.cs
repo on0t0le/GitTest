@@ -22,9 +22,19 @@ namespace Test1
 
         public Point Cooking()
         {
-            int x = rand.Next(2, xlim - 2);
-            int y = rand.Next(2, ylim - 2);
-            return new Point(x, y, symb);
+            int x;
+            int y;
+            Point p;
+
+            x = rand.Next(5, xlim - 5);
+            y = rand.Next(5, ylim - 5);
+
+            //x = 9;
+            //y = 5;
+
+            p=  new Point(x, y, symb);
+
+            return p;
         }
     }
 }
